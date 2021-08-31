@@ -48,6 +48,8 @@ cd objdir
 gmake
 gmake check
 gmake install
+cd ..
+rm -rf objdir
 ```
 
 Set up SystemC environment variables
@@ -57,8 +59,8 @@ Install according to INSTALL
 Add some userful exports to your vimrc to allow for more convinient Makefiles
 
 ```bash
-export SYSTEMC_HOME=<Prefix>
+echo "export SYSTEMC_HOME=$SYSTEMC_HOME" >> ~/.bashrc
 ```
 
-
+Set up path to libraries in Makefile.config and so on until you resolve all paths to run examples
 
