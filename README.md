@@ -36,9 +36,18 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Get and isntall SystemC from
 
 ```bash
+export SYSTEMC_HOME=<directory to install systemc>
 mkdir systemc
 cd systemc
 wget https://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.3.tar.gz
+​tar xvf systemc-2.3.3.tar.gz
+cd systemc-2.3.3
+mkdir objdir
+cd objdir
+../configure --enable-pthreads --prefix=$SYSTEMC_HOME
+gmake
+gmake check
+gmake install
 ```
 
 Set up SystemC environment variables
