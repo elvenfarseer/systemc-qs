@@ -4,9 +4,9 @@ description: Describe simple build system based on simplistic Makefile from exam
 
 # Simple Build System
 
-I advice to start with doing mimic of 3 Makefiles: Makefile for building project, in which you include Makefile.config and Makefile.rules.
+I advice to start with doing mimic of 3 Makefiles: `Makefile` for building project, in which you include `Makefile.config` and `Makefile.rules`.
 
-This first makefile better to keep withing project folder, other two \(Makefile.config and Makefile.rules\) are shared between projects and shall be kept in some common place. Something like this:
+This first `Makefile` better to keep withing project folder, other two \(`Makefile.config` and `Makefile.rules`\) are shared between projects and shall be kept in some common place. Something like this:
 
 ```text
 include ../build-unix/Makefile.config
