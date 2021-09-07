@@ -10,3 +10,9 @@
 
 * [2-level values with bool](systemc-data-types/2-level-values-with-bool.md)
 
+## HEAP
+
+* [Terminology and conventions](heap/terminology-and-conventions.md)
+* [Processes](heap/processes.md)
+* [Sensitivity](heap/sensitivity.md)
+

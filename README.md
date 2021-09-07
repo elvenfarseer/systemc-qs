@@ -36,9 +36,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Get and isntall SystemC from
 
 ```bash
+export SYSTEMC_HOME=<directory to install systemc>
 mkdir systemc
 cd systemc
 wget https://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.3.tar.gz
+​tar xvf systemc-2.3.3.tar.gz
+cd systemc-2.3.3
+mkdir objdir
+cd objdir
+../configure --enable-pthreads --prefix=$SYSTEMC_HOME
+gmake
+gmake check
+gmake install
+cd ..
+rm -rf objdir
 ```
 
 Set up SystemC environment variables
@@ -48,8 +59,8 @@ Install according to INSTALL
 Add some userful exports to your vimrc to allow for more convinient Makefiles
 
 ```bash
-export SYSTEMC_HOME=<Prefix>
+echo "export SYSTEMC_HOME=$SYSTEMC_HOME" >> ~/.bashrc
 ```
 
-
+Set up path to libraries in Makefile.config and so on until you resolve all paths to run examples
 
