@@ -9,6 +9,7 @@
 ## SystemC Data Types
 
 * [2-level values with bool](systemc-data-types/2-level-values-with-bool.md)
+* [Notes](systemc-data-types/notes.md)
 
 ## HEAP
 
